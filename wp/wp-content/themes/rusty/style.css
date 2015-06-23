@@ -1577,9 +1577,9 @@ img.aligncenter {
 	padding-top: calc(7.6923% + 24px);
 }
 
-.hentry + .hentry {
+/*.hentry + .hentry {
 	border-top: 1px solid rgba(51, 51, 51, 0.1);
-}
+}*/
 
 .post-thumbnail {
 	border: 0;
@@ -2672,6 +2672,21 @@ p > video {
 }
 
 /**
+ * Index post listing
+ **/
+article.post-listing {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+article.post-listing p.entry-title {
+  font-size: 100%;
+}
+
+/**
  * 16.1 Mobile Large 620px
  */
 
@@ -2761,15 +2776,15 @@ p > video {
 		margin: 0 7.6923%;
 	}
 
-	.hentry + .hentry,
+	/*.hentry + .hentry,
 	.page-header + .hentry,
 	.page-header + .page-content {
 		margin-top: 7.6923%;
-	}
+	}*/
 
-	.hentry + .hentry {
+	/*.hentry + .hentry {
 		border-top: 0;
-	}
+	}*/
 
 	.post-thumbnail {
 		margin-bottom: 2.4em;
@@ -4439,11 +4454,11 @@ p > video {
 		padding-top: 8.3333%;
 	}
 
-	.hentry + .hentry,
+	/*.hentry + .hentry,
 	.page-header + .hentry,
 	.page-header + .page-content {
 		margin-top: 8.3333%;
-	}
+	}*/
 
 	.post-thumbnail {
 		margin-bottom: 2.4em;
@@ -5908,7 +5923,7 @@ p > video {
 	td,
 	.site-header,
 	.site-footer,
-	.hentry + .hentry,
+	/*.hentry + .hentry,*/
 	.author-info,
 	.page-header,
 	.comments-area,
@@ -5940,9 +5955,9 @@ p > video {
 		display: block;
 	}
 
-	.hentry + .hentry {
+	/*.hentry + .hentry {
 		margin-top: 7.6923%;
-	}
+	}*/
 
 	.hentry.has-post-thumbnail {
 		padding-top: 7.6923%;
