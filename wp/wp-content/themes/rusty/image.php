@@ -2,9 +2,9 @@
 /**
  * The template for displaying image attachments
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 
 get_header(); ?>
@@ -36,7 +36,7 @@ get_header(); ?>
 								/**
 								 * Filter the default Twenty Fifteen image attachment size.
 								 *
-								 * @since Twenty Fifteen 1.0
+								 * @since Rusty Radio 0.1
 								 *
 								 * @param string $image_size Image size. Default 'large'.
 								 */

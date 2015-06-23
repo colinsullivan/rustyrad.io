@@ -4,9 +4,9 @@
  *
  * Learn more: {@link https://codex.wordpress.org/Template_Hierarchy}
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 ?>
 

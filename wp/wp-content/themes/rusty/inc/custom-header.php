@@ -2,13 +2,13 @@
 /**
  * Custom Header functionality for Twenty Fifteen
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 
 /**
- * Set up the WordPress core custom header feature.
+ * Set up the RustyRadio core custom header feature.
  *
  * @uses rustyradio_header_style()
  */
@@ -19,7 +19,7 @@ function rustyradio_custom_header_setup() {
 	/**
 	 * Filter Twenty Fifteen custom-header support arguments.
 	 *
-	 * @since Twenty Fifteen 1.0
+	 * @since Rusty Radio 0.1
 	 *
 	 * @param array $args {
 	 *     An array of custom-header support arguments.
@@ -43,7 +43,7 @@ add_action( 'after_setup_theme', 'rustyradio_custom_header_setup' );
 /**
  * Convert HEX to RGB.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @param string $color The original color, in 3- or 6-digit hexadecimal form.
  * @return array Array containing RGB (red, green, and blue) values for the given
@@ -71,7 +71,7 @@ if ( ! function_exists( 'rustyradio_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @see rustyradio_custom_header_setup()
  */
@@ -174,7 +174,7 @@ endif; // rustyradio_header_style
 /**
  * Enqueues front-end CSS for the header background color.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @see wp_add_inline_style()
  */
@@ -220,7 +220,7 @@ add_action( 'wp_enqueue_scripts', 'rustyradio_header_background_color_css', 11 )
 /**
  * Enqueues front-end CSS for the sidebar text color.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_sidebar_text_color_css() {
 	$color_scheme       = rustyradio_get_color_scheme();

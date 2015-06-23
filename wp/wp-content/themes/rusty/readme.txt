@@ -1,5 +1,5 @@
 === Twenty Fifteen ===
-Contributors: the WordPress team
+Contributors: the RustyRadio team
 Tags: black, blue, gray, pink, purple, white, yellow, dark, light, two-columns, left-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
 Requires at least: 4.1
 Tested up to: 4.1
@@ -69,7 +69,7 @@ Available icons: (Linking to any of the following sites will automatically displ
 * Twitch
 * Twitter
 * Vimeo
-* WordPress
+* RustyRadio
 * YouTube
 
 Social networks that aren't currently supported will be indicated by a generic share icon.

@@ -4,16 +4,16 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 
 if ( ! function_exists( 'rustyradio_comment_nav' ) ) :
 /**
  * Display navigation to next/previous comments when applicable.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_comment_nav() {
 	// Are there comments to navigate through?
@@ -42,7 +42,7 @@ if ( ! function_exists( 'rustyradio_entry_meta' ) ) :
 /**
  * Prints HTML with meta information for the categories, tags.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_entry_meta() {
 	if ( is_sticky() && is_home() && ! is_paged() ) {
@@ -128,7 +128,7 @@ endif;
 /**
  * Determine whether blog/site has more than one category.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @return bool True of there is more than one category, false otherwise.
  */
@@ -161,7 +161,7 @@ function rustyradio_categorized_blog() {
 /**
  * Flush out the transients used in {@see rustyradio_categorized_blog()}.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_category_transient_flusher() {
 	// Like, beat it. Dig?
@@ -177,7 +177,7 @@ if ( ! function_exists( 'rustyradio_post_thumbnail' ) ) :
  * Wraps the post thumbnail in an anchor element on index views, or a div
  * element when on single views.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_post_thumbnail() {
 	if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
@@ -209,7 +209,7 @@ if ( ! function_exists( 'rustyradio_get_link_url' ) ) :
  *
  * Falls back to the post permalink if no URL is found in the post.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @see get_url_in_content()
  *
@@ -226,7 +226,7 @@ if ( ! function_exists( 'rustyradio_excerpt_more' ) && ! is_admin() ) :
 /**
  * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Continue reading' link.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @return string 'Continue reading' link prepended with an ellipsis.
  */

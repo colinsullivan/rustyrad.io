@@ -4,9 +4,9 @@
  *
  * Contains the closing of the "site-content" div and all content after.
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 ?>
 
@@ -18,7 +18,7 @@
 				/**
 				 * Fires before the Twenty Fifteen footer text for footer customization.
 				 *
-				 * @since Twenty Fifteen 1.0
+				 * @since Rusty Radio 0.1
 				 */
 				do_action( 'rustyradio_credits' );
 			?>

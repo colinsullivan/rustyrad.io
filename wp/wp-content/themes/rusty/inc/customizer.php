@@ -2,15 +2,15 @@
 /**
  * Twenty Fifteen Customizer functionality
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 
 /**
  * Add postMessage support for site title and description for the Customizer.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @param WP_Customize_Manager $wp_customize Customizer object.
  */
@@ -82,7 +82,7 @@ add_action( 'customize_register', 'rustyradio_customize_register', 11 );
  * 5. Sidebar Text and Link Color.
  * 6. Meta Box Background Color.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @return array An associative array of color scheme options.
  */
@@ -161,7 +161,7 @@ if ( ! function_exists( 'rustyradio_get_color_scheme' ) ) :
 /**
  * Get the current Twenty Fifteen color scheme.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @return array An associative array of either the current or default color scheme hex values.
  */
@@ -181,7 +181,7 @@ if ( ! function_exists( 'rustyradio_get_color_scheme_choices' ) ) :
 /**
  * Returns an array of color scheme choices registered for Twenty Fifteen.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @return array Array of color schemes.
  */
@@ -201,7 +201,7 @@ if ( ! function_exists( 'rustyradio_sanitize_color_scheme' ) ) :
 /**
  * Sanitization callback for color schemes.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @param string $value Color scheme name value.
  * @return string Color scheme name.
@@ -220,7 +220,7 @@ endif; // rustyradio_sanitize_color_scheme
 /**
  * Enqueues front-end CSS for color scheme.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @see wp_add_inline_style()
  */
@@ -263,7 +263,7 @@ add_action( 'wp_enqueue_scripts', 'rustyradio_color_scheme_css' );
  *
  * Passes color scheme data as colorScheme global.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_customize_control_js() {
 	wp_enqueue_script( 'color-scheme-control', get_template_directory_uri() . '/js/color-scheme-control.js', array( 'customize-controls', 'iris', 'underscore', 'wp-util' ), '20141216', true );
@@ -274,7 +274,7 @@ add_action( 'customize_controls_enqueue_scripts', 'rustyradio_customize_control_
 /**
  * Binds JS handlers to make the Customizer preview reload changes asynchronously.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_customize_preview_js() {
 	wp_enqueue_script( 'rustyradio-customize-preview', get_template_directory_uri() . '/js/customize-preview.js', array( 'customize-preview' ), '20141216', true );
@@ -284,7 +284,7 @@ add_action( 'customize_preview_init', 'rustyradio_customize_preview_js' );
 /**
  * Returns CSS for the color schemes.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @param array $colors Color scheme colors.
  * @return string Color scheme CSS.
@@ -689,7 +689,7 @@ CSS;
  * The template generates the css dynamically for instant display in the Customizer
  * preview.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_color_scheme_css_template() {
 	$colors = array(

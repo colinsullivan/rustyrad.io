@@ -4,7 +4,7 @@
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
- * hooks in WordPress to change core functionality.
+ * hooks in RustyRadio to change core functionality.
  *
  * When using a child theme you can override certain functions (those wrapped
  * in a function_exists() call) by defining them first in your child theme's
@@ -20,22 +20,22 @@
  * For more information on hooks, actions, and filters,
  * {@link https://codex.wordpress.org/Plugin_API}
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 660;
 }
 
 /**
- * Twenty Fifteen only works in WordPress 4.1 or later.
+ * Twenty Fifteen only works in RustyRadio 4.1 or later.
  */
 if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {
 	require get_template_directory() . '/inc/back-compat.php';
@@ -43,13 +43,13 @@ if ( version_compare( $GLOBALS['wp_version'], '4.1-alpha', '<' ) ) {
 
 if ( ! function_exists( 'rustyradio_setup' ) ) :
 /**
- * Sets up theme defaults and registers support for various WordPress features.
+ * Sets up theme defaults and registers support for various RustyRadio features.
  *
  * Note that this function is hooked into the after_setup_theme hook, which
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_setup() {
 
@@ -65,9 +65,9 @@ function rustyradio_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	/*
-	 * Let WordPress manage the document title.
+	 * Let RustyRadio manage the document title.
 	 * By adding theme support, we declare that this theme does not use a
-	 * hard-coded <title> tag in the document head, and expect WordPress to
+	 * hard-coded <title> tag in the document head, and expect RustyRadio to
 	 * provide it for us.
 	 */
 	add_theme_support( 'title-tag' );
@@ -106,7 +106,7 @@ function rustyradio_setup() {
 	$color_scheme  = rustyradio_get_color_scheme();
 	$default_color = trim( $color_scheme[0], '#' );
 
-	// Setup the WordPress core custom background feature.
+	// Setup the RustyRadio core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'rustyradio_custom_background_args', array(
 		'default-color'      => $default_color,
 		'default-attachment' => 'fixed',
@@ -124,7 +124,7 @@ add_action( 'after_setup_theme', 'rustyradio_setup' );
 /**
  * Register widget area.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @link https://codex.wordpress.org/Function_Reference/register_sidebar
  */
@@ -145,7 +145,7 @@ if ( ! function_exists( 'rustyradio_fonts_url' ) ) :
 /**
  * Register Google fonts for Twenty Fifteen.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @return string Google fonts URL for the theme.
  */
@@ -220,7 +220,7 @@ add_action( 'wp_head', 'rustyradio_javascript_detection', 0 );
 /**
  * Enqueue scripts and styles.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 function rustyradio_scripts() {
 	// Add custom fonts, used in the main stylesheet.
@@ -261,7 +261,7 @@ add_action( 'wp_enqueue_scripts', 'rustyradio_scripts' );
 /**
  * Add featured image as background image to post navigation elements.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @see wp_add_inline_style()
  */
@@ -303,7 +303,7 @@ add_action( 'wp_enqueue_scripts', 'rustyradio_post_nav_background' );
 /**
  * Display descriptions in main navigation.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @param string  $item_output The menu item output.
  * @param WP_Post $item        Menu item object.
@@ -323,7 +323,7 @@ add_filter( 'walker_nav_menu_start_el', 'rustyradio_nav_description', 10, 4 );
 /**
  * Add a `screen-reader-text` class to the search form's submit button.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  *
  * @param string $html Search form HTML.
  * @return string Modified search form HTML.
@@ -336,20 +336,20 @@ add_filter( 'get_search_form', 'rustyradio_search_form_modify' );
 /**
  * Implement the Custom Header feature.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 require get_template_directory() . '/inc/template-tags.php';
 
 /**
  * Customizer additions.
  *
- * @since Twenty Fifteen 1.0
+ * @since Rusty Radio 0.1
  */
 require get_template_directory() . '/inc/customizer.php';

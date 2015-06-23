@@ -2,9 +2,9 @@
 /**
  * The template for displaying Author bios
  *
- * @package WordPress
- * @subpackage Twenty_Fifteen
- * @since Twenty Fifteen 1.0
+ * @package RustyRadio
+ * @subpackage theme
+ * @since Rusty Radio 0.1
  */
 ?>
 
@@ -15,7 +15,7 @@
 		/**
 		 * Filter the author bio avatar size.
 		 *
-		 * @since Twenty Fifteen 1.0
+		 * @since Rusty Radio 0.1
 		 *
 		 * @param int $size The avatar height and width size in pixels.
 		 */
