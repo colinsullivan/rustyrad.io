@@ -22,7 +22,6 @@
 				 */
 				do_action( 'rustyradio_credits' );
 			?>
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'rustyradio' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'rustyradio' ), 'WordPress' ); ?></a>
 		</div><!-- .site-info -->
 	</footer><!-- .site-footer -->
 

@@ -159,7 +159,7 @@ function rustyradio_fonts_url() {
 	 * by Noto Sans, translate this to 'off'. Do not translate into your own language.
 	 */
 	if ( 'off' !== _x( 'on', 'Noto Sans font: on or off', 'rustyradio' ) ) {
-		$fonts[] = 'Noto Sans:400italic,700italic,400,700';
+		$fonts[] = 'Open Sans:400italic,700italic,400,700';
 	}
 
 	/*
@@ -167,7 +167,7 @@ function rustyradio_fonts_url() {
 	 * by Noto Serif, translate this to 'off'. Do not translate into your own language.
 	 */
 	if ( 'off' !== _x( 'on', 'Noto Serif font: on or off', 'rustyradio' ) ) {
-		$fonts[] = 'Noto Serif:400italic,700italic,400,700';
+		$fonts[] = 'Roboto Slab:400italic,700italic,400,700';
 	}
 
 	/*
