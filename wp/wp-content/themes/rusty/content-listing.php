@@ -16,7 +16,10 @@
 		//rustyradio_post_thumbnail();
 	?>
   <?php
-    the_title( sprintf( '<p class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></p>' );
+    the_title(
+      sprintf('<p class="entry-title"><a href="%s" rel="bookmark"><span class="title">', esc_url( get_permalink() ) ),
+      sprintf('</span><br /><span class="guests">%s</span></a></p>', get_post_custom_values("guests")[0])
+    );
   ?>
 
 
