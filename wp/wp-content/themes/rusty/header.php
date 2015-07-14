@@ -35,7 +35,7 @@
 
         $description = get_bloginfo( 'description', 'display' );
         if ( $description || is_customize_preview() ) : ?>
-          <p class="site-description"><?php echo $description; ?></p>
+          <p class="site-description"><?php echo $description; ?><br />Subscribe at <a href="http://rustyrad.io/feed/podcast">rustyrad.io/feed/podcast</a></p>
         <?php endif;
       ?>
     </div><!-- .site-branding -->
